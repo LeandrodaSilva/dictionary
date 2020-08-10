@@ -1,0 +1,113 @@
+body {
+  padding: 8px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #fcf9f1;
+  margin: 8px;
+}
+
+header {
+  padding-top: 10%;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+main {
+  margin: 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
+  margin: 4px;
+  left: 0;
+}
+
+h1 img {
+  margin-right: 4px;
+}
+
+.container-search-invalid {
+  border: solid 2px #cb0f0f;
+  border-radius: 18px;
+}
+
+.container-search {
+  border: solid 1px #c1c1c1;
+  border-radius: 18px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20%;
+}
+
+.container-search-input {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.container-search-input img {
+  margin-left: 4px;
+  min-width: 18px;
+}
+
+.hover-effect:hover {
+  border: solid 1px #a4a3a3;
+  box-shadow: 2px 2px 2px 1px rgba(65, 64, 64, 0.2);
+}
+
+.search-label {
+
+}
+
+#input-search {
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  height: 30px;
+  display: flex;
+  flex: 100%;
+  background: transparent;
+  padding-left: 12px;
+}
+
+.container-search-button {
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-search {
+  width: 150px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  border: 1px solid #a4a3a3;
+  border-radius: 4px;
+}
+
+#button-search:active {
+  background: #a4a3a3;
+}
+
+#container {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.container-card {
+  border: 1px solid #a4a3a3;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: white;
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+}
+

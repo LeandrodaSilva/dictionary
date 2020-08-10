@@ -1,0 +1,38 @@
+<html lang="pt-BR">
+  <head>
+    <title>Dictionary</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1><img src="static/img/book-24px.svg" alt="Open book">Dictionary</h1>
+    </header>
+
+    <main>
+      <div class="container-search hover-effect">
+        <div class="container-search-input">
+          <img src="./static/img/search-black-18dp.svg" alt="Lupa" />
+          <input id="input-search" minlength="1" type="text" value="example">
+        </div>
+      </div>
+      <div class="container-search-button">
+        <button id="button-search" class="hover-effect" type="button">Search</button>
+      </div>
+
+
+      <div id="container"></div>
+    </main>
+
+    <footer>
+      <p>API: <a href="https://www.linguarobot.io/">Lingua Robot</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module">
+      import Dictionary from "./static/javascripts/Dictionary.js";
+      new Dictionary(document.getElementById('container'));
+    </script>
+  </body>
+</html>
