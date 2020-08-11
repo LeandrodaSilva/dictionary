@@ -19,7 +19,7 @@ export default class Dictionary {
           method: 'get',
           headers: {
             "x-rapidapi-host": "lingua-robot.p.rapidapi.com",
-            "x-rapidapi-key": "dd5d35ec84mshb69cd815d38f244p1cbc2fjsn05d4a857dea4"
+            "x-rapidapi-key": "dd5d35ec84mshb69cd815d38f244p1cbc2fjsn05d4a857dea4" //Retirar no projeto 2 e adicionar ao .env
           },
           withCredentials: true
         })
