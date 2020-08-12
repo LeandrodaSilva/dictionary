@@ -11,12 +11,16 @@
     </header>
 
     <main>
-      <form>
-        <div class="container-search hover-effect">
-          <div class="container-search-input">
-            <label for="input-search" hidden>Pesquisa:</label>
-            <input id="input-search" type="text" title="Search field" value="example" required autofocus>
-          </div>
+      <form autocomplete="off">
+        <div class="container-search">
+          <label for="input-search" hidden>Pesquisa:</label>
+          <input id="input-search"
+                 class="hover-effect"
+                 type="text"
+                 title="Search field"
+                 value="example"
+                 required
+                 autofocus>
         </div>
         <div class="container-search-button">
           <button id="button-search" class="hover-effect" type="submit">Search</button>
