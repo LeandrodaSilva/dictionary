@@ -30,24 +30,10 @@ h1 img {
 }
 
 .container-search {
-  border: solid 1px #c1c1c1;
-  border-radius: 18px;
-  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 20%;
-}
-
-.container-search-input {
-  display: flex;
-  flex: 1;
-  position: relative;
-}
-
-.container-search-input img {
-  margin-left: 4px;
-  min-width: 18px;
 }
 
 .hover-effect:hover {
@@ -56,15 +42,18 @@ h1 img {
 }
 
 #input-search {
+  border: solid 1px #c1c1c1;
   border-radius: 18px;
-  border: none;
   outline: none;
   height: 30px;
   display: flex;
   flex: 100%;
-  background: transparent;
-  background: url('../img/search-black-18dp.svg') no-repeat scroll 7px 7px;
   padding-left:30px;
+  background-color: white;
+  background-image: url('../img/search-black-18dp.svg');
+  background-repeat: no-repeat;
+  background-size: 20px 30px;
+  background-attachment: scroll;
 }
 
 #input-search:invalid {
