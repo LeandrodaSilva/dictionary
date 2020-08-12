@@ -1,10 +1,12 @@
 export default class Dictionary {
   constructor(container) {
-    let buttonSearch = document.getElementById('button-search');
-    let inputSearch = document.getElementById('input-search');
-    let containerSearch = document.querySelector('.container-search-input');
+    document.querySelector('form').addEventListener('submit', evt => {
+      evt.preventDefault();
 
-    buttonSearch.addEventListener("click", evt => {
+      let buttonSearch = document.getElementById('button-search');
+      let inputSearch = document.getElementById('input-search');
+      let containerSearch = document.querySelector('.container-search-input');
+
 
       if (containerSearch.classList.contains('container-search-invalid')) {
         containerSearch.classList.remove('container-search-invalid')
@@ -42,7 +44,9 @@ export default class Dictionary {
         containerSearch.classList.add('container-search-invalid');
       }
 
-    });
+    })
+
+
   }
 
   uiBuildCard(container, entries) {
