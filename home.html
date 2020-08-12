@@ -23,7 +23,7 @@
                  autofocus>
         </div>
         <div class="container-search-button">
-          <button id="button-search" class="hover-effect" type="submit">Search</button>
+          <button id="button-search" class="hover-effect" type="submit" onclick="search()">Search</button>
         </div>
       </form>
 
@@ -35,9 +35,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module">
-      import Dictionary from "./static/javascripts/Dictionary.js";
-      new Dictionary(document.getElementById('container'));
-    </script>
+    <script src="static/javascripts/api.js" defer></script>
   </body>
 </html>
