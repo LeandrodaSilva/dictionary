@@ -7,20 +7,22 @@
 
   <body>
     <header>
-      <h1><img src="static/img/book-24px.svg" alt="Open book">Dictionary</h1>
+      <h1 title="Dictionary"><img src="static/img/book-24px.svg" alt="Open book">Dictionary</h1>
     </header>
 
     <main>
-      <div class="container-search hover-effect">
-        <div class="container-search-input">
-          <img src="./static/img/search-black-18dp.svg" alt="Lupa" />
-          <input id="input-search" minlength="1" type="text" value="example">
+      <form>
+        <div class="container-search hover-effect">
+          <div class="container-search-input">
+            <img src="./static/img/search-black-18dp.svg" alt="Lupa" />
+            <label for="input-search" hidden>Pesquisa:</label>
+            <input id="input-search" type="text" title="Search field" required autofocus>
+          </div>
         </div>
-      </div>
-      <div class="container-search-button">
-        <button id="button-search" class="hover-effect" type="button">Search</button>
-      </div>
-
+        <div class="container-search-button">
+          <button id="button-search" class="hover-effect" type="submit">Search</button>
+        </div>
+      </form>
 
       <div id="container"></div>
     </main>
