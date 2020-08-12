@@ -75,8 +75,6 @@ export default class Dictionary {
       if (lexeme.senses) {
         lexeme.senses.map(sense => {
           if (sense.definition) {
-            console.log(sense.definition)
-
             definitions += `<p>${sense.definition}</p>`;
           }
 
@@ -92,13 +90,12 @@ export default class Dictionary {
 
     pronuntiations.map(pronunciation => {
       if (pronunciation.audio) {
-        console.log(pronunciation.audio.url)
         audio = pronunciation.audio.url;
       }
     });
 
     return `
-        <span>Pronuntiation:</span>
+        <h4>Pronuntiation:</h4>
         <audio controls="controls">
             <source src="${audio}" type="audio/mp3" />seu navegador não suporta HTML5
         </audio>
