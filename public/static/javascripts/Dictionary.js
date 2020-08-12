@@ -5,16 +5,10 @@ export default class Dictionary {
 
       let buttonSearch = document.getElementById('button-search');
       let inputSearch = document.getElementById('input-search');
-      let containerSearch = document.querySelector('.container-search-input');
-
-
-      if (containerSearch.classList.contains('container-search-invalid')) {
-        containerSearch.classList.remove('container-search-invalid')
-      }
 
       let btnText = buttonSearch.innerText;
 
-      if (inputSearch.value) {
+      if (inputSearch.value.length) {
         buttonSearch.innerText = "Loading..."
         axios({
           url: `https://lingua-robot.p.rapidapi.com/language/v1/entries/en/${inputSearch.value}`,
@@ -38,10 +32,6 @@ export default class Dictionary {
 
           buttonSearch.innerText = btnText;
         })
-      } else {
-        console.log('vazio');
-
-        containerSearch.classList.add('container-search-invalid');
       }
 
     })
